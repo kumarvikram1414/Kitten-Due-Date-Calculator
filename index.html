@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Due Date Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input-output-section">
+            <form id="dueDateForm">
+                <div class="input-group">
+                    <label for="firstBreeding">Date of First Breeding</label>
+                    <input type="text" id="firstBreeding" name="firstBreeding" required>
+
+                </div>
+                <div class="input-group">
+                    <label for="gestationPeriod">Gestation Period </label>
+                    <input type="number" id="gestationPeriod" name="gestationPeriod" min="50" max="75"  required>
+                   
+                 <br><br>
+                    <label for="pinkingUp">Pinking Up</label>
+                    <div class="output-box">
+                        <p id="pinkingUp"></p>
+                    </div>
+                    
+                    <label for="dueDate">Expected Due Date</label>
+                    <div class="output-box">
+                        <p id="dueDate"></p>
+                    </div>
+
+
+
+            </form>
+                    </div>
+                    
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
